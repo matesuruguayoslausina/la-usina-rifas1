@@ -7,7 +7,7 @@ type MapState = Record<number, State>
 export default function Client({ raffleId, slug, price, total, title }: { raffleId: string; slug: string; price: number; total: number; title: string }){
   const [map, setMap] = useState<MapState>({})
   const [selected, setSelected] = useState<number[]>([])
-  const [left, setLeft] = useState<number>(600) // 10 min
+  const [left, setLeft] = useState<number>(600)
   const [email, setEmail] = useState<string>('')
 
   const refresh = async ()=>{
